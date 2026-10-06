@@ -44,9 +44,9 @@ See `docs/test_results.txt` for recorded results.
 The local repository uses main and commits attributed to Titia Saikali with the
 Git email already configured on this computer. The solo workflow does not need
 partner setup, branches, pull requests, merging, or contribution tracking.
-GitHub repository: https://github.com/titiasaikali/Lab4-TitiaSaikali (private).
+GitHub repository: https://github.com/titiasaikali/Lab4-TitiaSaikali (public).
 See `docs/github_submission.md` for submission and reviewer access.
-Moodle upload and instructor/TA invitations are still pending.
+Moodle upload is still pending. The public repository is accessible without invitations.
 
 ## References
 - Assignment tutorial: https://www.w3schools.com/git/

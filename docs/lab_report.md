@@ -26,8 +26,8 @@ Manual review: launch both GUIs, add in Tkinter, refresh PyQt, toggle there,
 refresh Tkinter, close/reopen to verify persistence, then delete.
 
 ## Remaining account-dependent work
-GitHub repository: https://github.com/titiasaikali/Lab4-TitiaSaikali (private).
-Instructor/TA invitations and Moodle submission remain pending.
+GitHub repository: https://github.com/titiasaikali/Lab4-TitiaSaikali (public).
+Moodle submission remains pending. Public access does not require collaborator invitations.
 See github_submission.md for access and submission instructions.
 The tutorial reading is for the student: review the linked tutorial and study
 notes before presenting this work.

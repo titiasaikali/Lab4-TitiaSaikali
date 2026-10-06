@@ -3,13 +3,12 @@
 Repository link to submit:
 https://github.com/titiasaikali/Lab4-TitiaSaikali
 
-The private repository contains the project, README, tests, and Git history.
+The public repository contains the project, README, tests, and Git history.
 Release tag: v1.0.
 
 ## Remaining steps
 - Submit this repository URL and README on Moodle.
-- Invite your instructor and TAs as collaborators so they can access the private
-  repository. Their GitHub usernames are needed; no invitations have been sent.
+- The instructor and TAs can view the public repository without invitations.
 
 ## Future updates (PowerShell in Lab4)
 ```powershell
