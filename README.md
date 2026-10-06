@@ -44,8 +44,9 @@ See `docs/test_results.txt` for recorded results.
 The local repository uses main and commits attributed to Titia Saikali with the
 Git email already configured on this computer. The solo workflow does not need
 partner setup, branches, pull requests, merging, or contribution tracking.
-Publishing to GitHub and uploading to Moodle still require your account.
-See `docs/github_submission.md`; no remote upload or invitations are claimed.
+GitHub repository: https://github.com/titiasaikali/Lab4-TitiaSaikali (private).
+See `docs/github_submission.md` for submission and reviewer access.
+Moodle upload and instructor/TA invitations are still pending.
 
 ## References
 - Assignment tutorial: https://www.w3schools.com/git/

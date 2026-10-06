@@ -1,25 +1,23 @@
-# GitHub and Moodle submission ? Titia Saikali
+# Submission ? Titia Saikali
 
-No remote is configured yet. GitHub CLI is unavailable here.
+Repository link to submit:
+https://github.com/titiasaikali/Lab4-TitiaSaikali
 
-1. Sign in to GitHub and create `Lab4-TitiaSaikali`. Choose Private if required.
-   Leave it empty: do not initialize a second README, license, or gitignore.
-2. In a PowerShell terminal inside Lab4, replace YOUR_USERNAME:
+The private repository contains the project, README, tests, and Git history.
+Release tag: v1.0.
+
+## Remaining steps
+- Submit this repository URL and README on Moodle.
+- Invite your instructor and TAs as collaborators so they can access the private
+  repository. Their GitHub usernames are needed; no invitations have been sent.
+
+## Future updates (PowerShell in Lab4)
 ```powershell
-git remote add origin https://github.com/YOUR_USERNAME/Lab4-TitiaSaikali.git
-git push -u origin main
-git push origin v1.0
+git add .
+git commit -m "Describe your changes"
+git push
 ```
-3. Authenticate with Git's normal browser/credential manager prompt.
-4. Verify source, README, tests, and v1.0 are on GitHub.
-5. If private, invite instructor/TAs using their actual GitHub usernames through
-   repository Settings > Collaborators. No partner invitation is needed.
-6. Optionally create a GitHub release from v1.0 titled Lab 4 ? v1.0.
-7. Submit the real repository URL and README on Moodle.
-
-Repository URL: fill in after publishing. Solo work needs no who-pushed-what file.
 
 ## VS Code SCM
-Open Lab4 with File > Open Folder, then Source Control (Ctrl+Shift+G).
-Review changes, stage with +, enter a message, and commit. Inspect commits in
-Source Control Graph. The repository is already initialized.
+Open Lab4, then Source Control (Ctrl+Shift+G). Review edits, stage using +,
+enter a message, and commit. Use Sync Changes to upload commits.
