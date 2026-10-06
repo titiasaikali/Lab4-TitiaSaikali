@@ -1,0 +1,3 @@
+EECE 435L Lab 4 ? Titia Saikali
+Solo task manager using shared Tkinter/PyQt6 storage.
+See README.md for running and docs/github_submission.md for submission.

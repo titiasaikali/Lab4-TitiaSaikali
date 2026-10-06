@@ -1,0 +1,277 @@
+
+LAB 4– Version control, Git and Github
+Version control
+Version control - also known as source control or revision control - is an important software development practice for tracking and managing changes made to code and other files. It is closely related to source code management.
+With version control, every change made to the code base is tracked. This allows software developers to see the entire history of who changed what at any given time — and roll back from the current version to an earlier version if they need to. It also creates a single source of truth.
+Version control (or source control or revision control) serves as a safety net to protect the source code from irreparable harm, giving the development team the freedom to experiment without fear of causing damage or creating code conflicts.
+If developers code concurrently and create incompatible changes, version control identifies the problem areas so that team members can quickly revert changes to a previous version, compare changes, or identify who committed the problem code through the revision history. With a version control system (VCS), a software team can solve an issue before progressing further into a project. Through code reviews, software teams can analyze earlier versions to understand the changes made to the code over time.
+What is Git?
+Git is the most commonly used version control system. Git tracks the changes you make to files, so you have a record of what has been done, and you can revert to specific versions should you ever need to. Git also makes collaboration easier, allowing changes by multiple people to all be merged into one source. 
+
+
+Git is software that runs locally. Your files and their history are stored on your computer. You can also use online hosts (such as GitHub or Bitbucket) to store a copy of the files and their revision history. Having a centrally located place where you can upload your changes and download changes from others, enable you to collaborate more easily with other developers. Git can automatically merge the changes, so two people can even work on different parts of the same file and later merge those changes without loosing each other’s work!
+
+Git Repositories
+A Git repository (or repo for short) contains all of the project files and the entire revision history. You’ll take an ordinary folder of files (such as a website’s root folder), and tell Git to make it a repository. This creates a .git subfolder, which contains all of the Git metadata for tracking changes.
+On Unix-based operating systems such as macOS, files and folders that start with a period (.) are hidden, so you will not see the .git folder in the macOS Finder unless you show hidden files, but it’s there! You might be able to see it in some code editors.
+Stage & Commit Files
+Think of Git as keeping a list of changes to files. So how do we tell Git to record our changes? Each recorded change to a file or set of files is called a commit.
+Before we make a commit, we must tell Git what files we want to commit. This is called staging and uses the add command. Why must we do this? Why can’t we just commit the file directly? Let’s say you’re working on a two files, but only one of them is ready to commit. You don’t want to be forced to commit both files, just the one that’s ready. That’s where Git’s add command comes in. We add files to a staging area, and then we commit the files that have been staged.
+Remote Repositories (on GitHub & Bitbucket)
+Storing a copy of your Git repo with an online host (such as GitHub or Bitbucket) gives you a centrally located place where you can upload your changes and download changes from others, letting you collaborate more easily with other developers. After you have a remote repository set up, you upload (push) your files and revision history to it. After someone else makes changes to a remote repo, you can download (pull) their changes into your local repo.
+
+
+
+Branches & Merging
+Git lets you branch out from the original code base. This lets you more easily work with other developers, and gives you a lot of flexibility in your workflow.
+Here’s an example of how Git branches are useful. Let’s say you need to work on a new feature for a website. You create a new branch and start working. You haven’t finished your new feature, but you get a request to make a rush change that needs to go live on the site today. You switch back to the master branch, make the change, and push it live. Then you can switch back to your new feature branch and finish your work. When you’re done, you merge the new feature branch into the master branch and both the new feature and rush change are kept!
+When you merge two branches (or merge a local and remote branch) you can sometimes get a conflict. For example, you and another developer unknowingly both work on the same part of a file. The other developer pushes their changes to the remote repo. When you then pull them to your 
+
+local repo you’ll get a merge conflict. Luckily Git has a way to handle conflicts, so you can see both sets of changes and decide which you want to keep.
+Pull Requests
+Pull requests are a way to discuss changes before merging them into your codebase. Let’s say you’re managing a project. A developer makes changes on a new branch and would like to merge that branch into the master. They can create a pull request to notify you to review their code. You can discuss the changes, and decide if you want to merge it or not
+
+How to install Git
+
+In order to use Git, you have to install it on your computer. To do this, you can download the latest version on the official website. You can download for your operating system from the options given.
+
+Exercise
+Please go over the entire tutorial
+https://www.w3schools.com/git/
+
+Using VS Code Integrated Source Control Management
+Visual Studio Code has integrated source control management (SCM) and includes Git support out-of-the-box. 
+Create a new folder, open VS code and initialize git 
+https://code.visualstudio.com/docs/sourcecontrol/overview
+
+
+
+
+
+
+
+Exercise: to be graded: Consolidate all the skills learned by working on a collaborative project using Git and GitHub.
+For students working as a team of two on their projects:
+
+
+Detailed Steps for Python Project Collaboration (Tkinter vs. PyQt)
+________________________________________
+1. Form a Group of 2 Students
+Objective: Collaborate effectively with two team members.
+Action: Pair up with another student. Decide who will work on Tkinter and who will work on PyQt, and agree on any additional tasks such as backend development or testing.
+Example:
+Student1: Tkinter UI
+Student2: PyQt UI
+Both students will need to collaborate on backend integration and testing.
+________________________________________
+If two students are working on separate parts of a project (one with Tkinter and the other with PyQt) and need to combine their work into a single project, here’s a detailed approach they can follow to collaborate effectively:
+
+Steps for Combining Tkinter and PyQt Work
+
+1. Setup and Initial Configuration
+
+Create a Shared Repository:
+   - One Student Creates a Repository:
+     - One student (let’s say Student1) creates a GitHub repository for the combined project.
+     - Go to [GitHub’s new repository page](https://github.com/new).
+     - Enter a repository name (e.g., `Lab4-Student1FullName_Student2FullName`).
+     - Add a description (e.g., "A project combining Tkinter and PyQt documented implementations").
+     - Initialize with a README to describe the project and its structure.
+     - Click "Create repository".
+   
+Add Repository Collaborator:
+   - Invite the Other Student:
+     - Student1 should invite the second student (Student2) as a collaborator.
+     - Go to the repository’s "Settings" > "Collaborators & teams" > "Add people".
+     - Enter Student 2’s GitHub username and send an invitation.
+
+Clone the Shared Repository:
+   - Both students should clone the shared repository to their local machines:
+     git clone https://github.com/username/ Lab4-Student1FullName_Student2FullName.git
+
+ 2. Develop and Commit Separate Parts
+
+
+Create Separate Branches:
+   - Tkinter Work:
+     - Student1 creates a branch for Tkinter work:
+       git checkout -b feature-tkinter
+   - PyQt Work:
+     - Student2 creates a branch for PyQt work:
+       git checkout -b feature-pyqt
+
+Develop and Commit Changes:
+   - Tkinter:
+     - Student1 develops the Tkinter interface and commits his/her changes:
+       git add <tkinter-files>
+       git commit -m "Add Tkinter UI"
+       git push origin feature-tkinter
+
+   - PyQt:
+     - Student2 develops the PyQt interface and commits his/her changes:
+       git add <pyqt-files>
+       git commit -m "Add PyQt UI"
+       git push origin feature-pyqt
+
+
+ 3. Integrate Both Parts
+
+Merge Changes into the Main Branch:
+   - Review and Merge:
+     - Each student should create a pull request (PR) from their feature branch to the `main` branch.
+     - Review the PRs, resolve any conflicts, and merge the changes.
+   Handle Conflicts:
+   - Resolve Conflicts:
+     - If there are conflicts (e.g., shared configuration files), manually resolve them.
+     - After resolving conflicts, commit the changes:
+       
+       git add <resolved-files>
+       git commit -m "Resolve merge conflicts"
+       git push origin main
+
+ 4. Final Integration and Testing
+
+Combine Functionality:
+   - Integrate Tkinter and PyQt:
+     - Ensure that both Tkinter and PyQt components work together seamlessly. This might involve integrating logic or ensuring the application’s flow between the two interfaces.
+   
+Testing:
+  
+ - Test the Integrated Application:
+     - Both students should test the combined project to ensure it functions as expected.
+
+Documentation:
+   - Update README:
+     - Describe how to run and use both the Tkinter and PyQt interfaces in the README file.
+
+
+ 5. Tag the Final Version
+
+Create a Release:
+   - Tag the Final Commit:
+     - Tag the final version of the combined project:
+       git tag -a v1.0 -m "Final release with Tkinter and PyQt interfaces"
+       git push origin v1.0
+
+Create a GitHub Release:
+   - On GitHub, go to the "Releases" section and create a release for the tagged version.
+
+
+
+
+
+ Summary
+
+1. Create a shared repository and invite the other student as a collaborator.
+2. Develop and commit each part (Tkinter and PyQt) in separate branches.
+3. Merge changes into the main branch, resolving any conflicts.
+4. Integrate and test the combined functionality of Tkinter and PyQt.
+5. Tag and release the final version of the project.
+
+By following these steps, both students can effectively combine their separate Tkinter and PyQt implementations into a single cohesive project.
+
+Submission:
+Students can share their GitHub repository links with the instructor and the TAs  at the end of their project to review their work. 
+Steps for Students to Share Their Repository
+Ensure Repository is Private:
+Private Repository: If the repository is private, students need to invite the instructor and TAs as  collaborators.
+
+
+Send the Repository Link:
+Private Repository: Students should add the instructor and TAs as collaborators to their private repository.
+How to Invite a Collaborator:
+Go to the repository on GitHub.
+Click on "Settings" > "Collaborators & teams".
+Enter your GitHub username or email address.
+Click "Add collaborator" and send an invitation.
+Upload the Link on moodle:
+Students should provide the link to their repository along with any additional instructions or notes about their project by uploading the link to Moodle together with the readme file of who pushed what.
+
+For students working SOLO on their projects:
+If students are working alone on the project (one student doing both Tkinter and PyQt parts), then all steps related to collaboration, sharing, branches, merging, and pull requests are not needed.
+The unnecessary steps are:
+❌ 1. Setup and Initial Configuration
+A. Create a Shared Repository
+Not needed as a shared repository.
+The student only needs to create their own GitHub repository.
+B. Add Repository Collaborator
+Not needed.
+There is no second student to invite.
+C. Clone the Shared Repository
+Optional.
+The student can simply create the project locally and connect it to GitHub:
+git init
+git remote add origin <repository-url>
+
+❌ 2. Develop and Commit Separate Parts
+B. Create Separate Branches
+Not needed.
+A single student can work directly on the main branch.
+Instead of:
+feature-tkinter
+feature-pyqt
+They can do:
+main
+ ├── tkinter files
+ └── pyqt files
+C. Develop and Commit Changes
+Still needed, but simpler.
+The student commits both parts:
+Example:
+git add .
+git commit -m "Add Tkinter and PyQt interfaces"
+git push origin main
+
+❌ 3. Integrate Both Parts
+A. Merge Changes into Main Branch
+Not needed.
+No pull requests or branch merging.
+B. Handle Conflicts
+Usually not needed.
+Conflicts only happen when multiple branches/people edit the same files.
+
+✅ 4. Final Integration and Testing
+Still needed:
+A. Combine Functionality
+Yes. Make sure Tkinter and PyQt parts work together.
+B. Testing
+Yes. Test the complete application.
+C. Documentation
+Yes. Update README with:
+How to run the program
+How Tkinter and PyQt are used
+
+✅ 5. Tag the Final Version
+Optional but recommended:
+A. Create a Release
+Can still be done.
+Example:
+git tag -a v1.0 -m "Final release"
+git push origin v1.0
+B. Create GitHub Release
+Optional.
+
+Submission Steps
+Still needed:
+✅ Make repository private (if required)✅ Add instructor/TAs as collaborators✅ Submit repository link on Moodle✅ Include README 
+The "who pushed what" file is not needed because there is only one contributor.
+
+Simplified workflow for a solo student:
+Create GitHub repository.
+Develop Tkinter and PyQt parts.
+Commit changes to main.
+Test the complete application.
+Update README.
+Push to GitHub.
+Submit the repository link.
+So the main removed parts are:
+Shared repository setup
+Adding collaborator
+Separate branches
+Pull requests
+Merging
+Conflict resolution
+Contribution tracking ("who pushed what")
+
+Video Resources:
+https://www.youtube.com/watch?v=8JJ101D3knE

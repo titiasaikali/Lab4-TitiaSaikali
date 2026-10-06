@@ -1,0 +1,8 @@
+test_blank_title_rejected_and_parameterized_input (test_integration.IntegrationTests.test_blank_title_rejected_and_parameterized_input) ... ok
+test_cross_interface_add_toggle_delete (test_integration.IntegrationTests.test_cross_interface_add_toggle_delete) ... ok
+test_pyqt_add_and_persistence (test_integration.IntegrationTests.test_pyqt_add_and_persistence) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.658s
+
+OK
